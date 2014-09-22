@@ -1,0 +1,27 @@
+{
+  "bot_id": "turbot_nonso",
+  "title": "Licence Data Bot",
+  "description": "Oil and Gas UK Licence Data - by Company Group and Block",
+  "language": "python",
+  "data_type": "primary data",
+  "identifying_fields": [
+    "company",
+    "block",
+    "interest",
+    "operator",
+    "licence",
+    "sample_date",
+    "source_url",
+  ],
+  "files": [
+    "scraper.py"
+    "tests_turbot.py"
+  ],
+  "frequency": "monthly",
+  "publisher": {
+    "name": "UK Department of Energy and Climate Change",
+    "url": "https://www.og.decc.gov.uk",
+    "terms": "Open Government License",
+    "terms_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+  }
+}
