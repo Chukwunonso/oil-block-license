@@ -33,7 +33,7 @@ class  CompanyLinks(object):
         return company_links
 
     def get_clean_links(self):
-        "Return the naked links reading for parsing."
+        "Return the naked links for parsing."
 
         raw_links = self.get_raw_links()
         cleaned = [link.get('href') for link in raw_links]
@@ -109,8 +109,11 @@ def run_scraper():
         info = CompanyInfo(j)
         try:
             turbotlib.log("progress: %s" % i)
-            print json.dumps(info.scrape())
+            for record in info.scrape():
+                print json.dumps(record)
         except AttributeError as e:
+            ## Uncomment the following to see empty entries
+            ## that cause failures
             #print "Fails at %s as %s" %(i, e)
             pass
 

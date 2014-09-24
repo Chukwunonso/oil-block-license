@@ -11,11 +11,10 @@
     "operator",
     "licence",
     "sample_date",
-    "source_url",
+    "source_url"
   ],
   "files": [
     "scraper.py"
-    "tests_turbot.py"
   ],
   "frequency": "monthly",
   "publisher": {
